@@ -1,0 +1,4 @@
+# dotfiles
+
+**cc.js**--
+*power*
