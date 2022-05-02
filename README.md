@@ -1,4 +1,3 @@
 # dotfiles
 
-**cc.js**--
-*power*
+** edit **
