@@ -1,29 +1,27 @@
 local wezterm = require 'wezterm'
-local mux = wezterm.mux
-local act = wezterm.action
 
 return {
   -- Đặt font chữ
   font = wezterm.font_with_fallback {
     "JetBrains Mono",
   },
-  
+
   -- Đặt kích thước font
   font_size = 11.0,
 
-  -- Đặt màu sắc nền và chữ
+  -- Đặt màu sắc nền và chữ dựa trên Gruvbox Dark
   colors = {
-    foreground = "#c0caf5",
-    background = "#1a1b26",
-    cursor_bg = "#c0caf5",
-    cursor_border = "#c0caf5",
-    cursor_fg = "#1a1b26",
-    selection_bg = "#33467C",
-    selection_fg = "#c0caf5",
+    foreground = "#ebdbb2",  -- Màu chữ chính
+    background = "#282828",  -- Màu nền chính
+    cursor_bg = "#ebdbb2",   -- Màu nền con trỏ
+    cursor_border = "#ebdbb2",  -- Màu viền con trỏ
+    cursor_fg = "#282828",   -- Màu chữ con trỏ
+    selection_bg = "#504945",  -- Màu nền vùng chọn
+    selection_fg = "#ebdbb2",  -- Màu chữ vùng chọn
 
-    -- Đặt màu cho các chế độ thông thường, đậm và mờ
-    ansi = {"#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6"},
-    brights = {"#414868", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#c0caf5"},
+    -- Đặt màu cho các chế độ thông thường và sáng
+    ansi = {"#282828", "#cc241d", "#98971a", "#d79921", "#458588", "#b16286", "#689d6a", "#a89984"},
+    brights = {"#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598", "#d3869b", "#8ec07c", "#ebdbb2"},
   },
 
   -- Đặt giao diện trong suốt (transparency)
@@ -38,7 +36,7 @@ return {
   --     opacity = 0.9,
   --     hsb = { brightness = 0.05, hue = 1.0, saturation = 1.0 },
   --   },
-  -- }, 
+  -- },
 
   -- Tùy chỉnh thanh tiêu đề (tab bar)
   hide_tab_bar_if_only_one_tab = true,
