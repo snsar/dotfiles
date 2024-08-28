@@ -70,7 +70,7 @@ ZSH_THEME="eastwood"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions laravel zsh-syntax-highlighting you-should-use zsh-bat)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,3 +114,5 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
+#the fuck cli tool 
+eval "$(zoxide init zsh)"

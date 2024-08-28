@@ -1,4 +1,6 @@
 local wezterm = require 'wezterm'
+local mux = wezterm.mux
+local act = wezterm.action
 
 return {
   -- Đặt font chữ
@@ -7,7 +9,7 @@ return {
   },
   
   -- Đặt kích thước font
-  font_size = 10.0,
+  font_size = 11.0,
 
   -- Đặt màu sắc nền và chữ
   colors = {
@@ -31,7 +33,7 @@ return {
   -- background = {
   --   {
   --     source = {
-  --       File = "/home/snsar/Downloads/wallhaven.png",  -- Đảm bảo đường dẫn tới hình ảnh đúng
+  --       File = "/home/snsar/Downloads/wallhaven1.png",  -- Đảm bảo đường dẫn tới hình ảnh đúng
   --     },
   --     opacity = 0.9,
   --     hsb = { brightness = 0.05, hue = 1.0, saturation = 1.0 },
