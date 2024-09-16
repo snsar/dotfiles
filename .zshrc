@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gpr="git pull --rebase origin testing"
-
+alias update="sudo apt udpate"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
