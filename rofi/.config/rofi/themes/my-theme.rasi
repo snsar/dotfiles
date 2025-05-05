@@ -1,0 +1,83 @@
+* {
+    bg-col:  #2e3440;
+    bg-col-light: #3b4252;
+    border-col: #4c566a;
+    selected-col: #81a1c1;
+    blue: #88c0d0;
+    fg-col: #eceff4;
+    fg-col2: #d8dee9;
+    grey: #4c566a;
+    width: 600;
+}
+
+window {
+    padding: 20;
+    height: 360px;
+    border: 3px;
+    border-color: @border-col;
+    background-color: @bg-col;
+}
+
+mainbox {
+    padding: 5;
+    border: 0px;
+    background-color: @bg-col;
+}
+
+message {
+    padding: 5px;
+    border-color: @border-col;
+    border: 0px 2px 2px 2px;
+    background-color: @bg-col;
+}
+
+textbox {
+    text-color: @fg-col;
+    background-color: @bg-col;
+}
+
+inputbar {
+    children: [prompt,entry];
+    border: 0px;
+    border-color: @border-col;
+    border-radius: 10px;
+    background-color: @bg-col;
+}
+
+prompt {
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: @blue;
+    text-color: @bg-col;
+}
+
+entry {
+    padding: 12px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: @bg-col-light;
+    text-color: @fg-col;
+}
+
+listview {
+    border: 0px 0px 0px;
+    padding: 10px 0px 0px;
+    columns: 1;
+    lines: 6;
+    background-color: @bg-col;
+}
+
+element {
+    padding: 12px;
+    background-color: @bg-col;
+    text-color: @fg-col;
+}
+
+element-icon {
+    size: 24px;
+}
+
+element selected {
+    background-color: @selected-col;
+    text-color: @bg-col;
+    border-radius: 10px;
+}
