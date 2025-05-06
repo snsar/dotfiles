@@ -46,6 +46,9 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 # flameshot
 bindsym $mod+Shift+s exec flameshot gui
 
+# i3lock
+bindsym $mod+Ctrl+l exec i3lock
+
 # border None
 new_window none
 
