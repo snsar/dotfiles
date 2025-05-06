@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:DejaVu Sans Mono 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -34,7 +34,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# lxpolkit 
+# lxpolkit
 exec --no-startup-id lxpolkit
 
 # nitrogen
@@ -42,6 +42,9 @@ exec --no-startup-id nitrogen --restore
 
 # picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+
+# fcitx input method
+exec --no-startup-id fcitx -d
 
 # flameshot
 bindsym $mod+Shift+s exec flameshot gui
@@ -129,7 +132,10 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Ctrl+space focus mode_toggle
+
+# Toggle input method with Super+Space
+bindsym $mod+space exec --no-startup-id fcitx-remote -t
 
 # focus the parent container
 bindsym $mod+a focus parent
