@@ -3,6 +3,7 @@ local wezterm = require("wezterm")
 local config = {}
 
 config.color_scheme = "GruvboxDark"
+config.enable_tab_bar = false
 
 -- Đặt hình nền (nếu muốn)
 config.window_background_image = "/home/snsar/Downloads/flower.png"
