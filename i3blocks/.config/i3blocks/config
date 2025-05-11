@@ -1,0 +1,90 @@
+# i3blocks config with icons
+# Yêu cầu font: Font Awesome, Nerd Font (JetBrains Mono Nerd Font, FiraCode NF...)
+
+# ===== GLOBAL CONFIG =====
+command=/usr/share/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=none
+
+# ===== ÂM LƯỢNG =====
+[volume]
+label= VOL
+instance=Master
+interval=once
+signal=10
+
+# ===== BỘ NHỚ RAM & SWAP =====
+[memory]
+label= RAM
+interval=30
+separator=false
+
+[memory]
+label= SWAP
+instance=swap
+interval=30
+separator=true
+
+# ===== CPU =====
+[cpu_usage]
+label= CPU
+interval=10
+min_width= CPU: 100.00%
+
+# ===== MẠNG =====
+[iface]
+label=
+color=#00FF00
+interval=10
+separator=false
+
+[wifi]
+label=
+interval=10
+separator=false
+
+[bandwidth]
+label=
+interval=5
+
+# ===== PIN (BATTERY) =====
+[battery]
+label=
+interval=30
+
+# ===== THỜI GIAN =====
+[time]
+label= 
+command=date '+%Y-%m-%d %H:%M:%S'
+interval=5
+
+# ===== Ổ ĐĨA (TÙY CHỌN) =====
+# [disk]
+# label= DISK
+# instance=/
+# interval=30
+
+# ===== NHIỆT ĐỘ (TÙY CHỌN) =====
+# [temperature]
+# label= TEMP
+# interval=10
+
+# ===== PHÁT NHẠC (TÙY CHỌN) =====
+# [mediaplayer]
+# label=
+# instance=spotify
+# interval=5
+# signal=10
+
+# ===== PHÍM CAPS/NUM LOCK (TÙY CHỌN) =====
+# [keyindicator]
+# instance=CAPS
+# label=⇪
+# interval=once
+# signal=11
+
+# [keyindicator]
+# instance=NUM
+# label=🔢
+# interval=once
+# signal=11
