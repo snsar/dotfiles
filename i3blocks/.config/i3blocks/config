@@ -6,6 +6,11 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+# ===== THỜI GIAN =====
+[time]
+command=date '+%H:%M %d-%m-%Y' 
+interval=5
+
 # ===== ÂM LƯỢNG =====
 [volume]
 label= VOL
@@ -17,13 +22,13 @@ signal=10
 [memory]
 label= RAM
 interval=30
-separator=false
-
-[memory]
-label= SWAP
-instance=swap
-interval=30
 separator=true
+
+# [memory]
+# label= SWAP
+# instance=swap
+# interval=30
+# separator=true
 
 # ===== CPU =====
 [cpu_usage]
@@ -32,16 +37,16 @@ interval=10
 min_width= CPU: 100.00%
 
 # ===== MẠNG =====
-[iface]
-label=
-color=#00FF00
-interval=10
-separator=false
+# [iface]
+# label=
+# color=#00FF00
+# interval=10
+# separator=false
 
-[wifi]
-label=
-interval=10
-separator=false
+# [wifi]
+# label=
+# interval=10
+# separator=false
 
 [bandwidth]
 label=
@@ -52,11 +57,6 @@ interval=5
 label=
 interval=30
 
-# ===== THỜI GIAN =====
-[time]
-label= 
-command=date '+%Y-%m-%d %H:%M:%S'
-interval=5
 
 # ===== Ổ ĐĨA (TÙY CHỌN) =====
 # [disk]
