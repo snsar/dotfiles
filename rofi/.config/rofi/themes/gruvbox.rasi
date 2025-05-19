@@ -1,0 +1,138 @@
+* {
+    /* Gruvbox dark colors */
+    gruvbox-dark-bg0:          #282828;
+    gruvbox-dark-bg0-soft:     #32302f;
+    gruvbox-dark-bg1:          #3c3836;
+    gruvbox-dark-bg2:          #504945;
+    gruvbox-dark-bg3:          #665c54;
+    gruvbox-dark-bg4:          #7c6f64;
+    
+    gruvbox-dark-fg0:          #fbf1c7;
+    gruvbox-dark-fg1:          #ebdbb2;
+    gruvbox-dark-fg2:          #d5c4a1;
+    gruvbox-dark-fg3:          #bdae93;
+    gruvbox-dark-fg4:          #a89984;
+    
+    /* Gruvbox accent colors */
+    gruvbox-dark-red:          #fb4934;
+    gruvbox-dark-green:        #b8bb26;
+    gruvbox-dark-yellow:       #fabd2f;
+    gruvbox-dark-blue:         #83a598;
+    gruvbox-dark-purple:       #d3869b;
+    gruvbox-dark-aqua:         #8ec07c;
+    gruvbox-dark-orange:       #fe8019;
+    
+    /* Gruvbox neutral colors */
+    gruvbox-dark-red-dim:      #cc241d;
+    gruvbox-dark-green-dim:    #98971a;
+    gruvbox-dark-yellow-dim:   #d79921;
+    gruvbox-dark-blue-dim:     #458588;
+    gruvbox-dark-purple-dim:   #b16286;
+    gruvbox-dark-aqua-dim:     #689d6a;
+    gruvbox-dark-orange-dim:   #d65d0e;
+
+    /* Theme colors */
+    background:                 @gruvbox-dark-bg0;
+    background-color:           @background;
+    foreground:                 @gruvbox-dark-fg1;
+    text-color:                 @foreground;
+    border-color:               @gruvbox-dark-blue-dim;
+    separatorcolor:             @border-color;
+    border-radius:              8px;
+    
+    selected-normal-foreground: @gruvbox-dark-bg0;
+    selected-normal-background: @gruvbox-dark-blue-dim;
+    
+    selected-active-foreground: @gruvbox-dark-bg0;
+    selected-active-background: @gruvbox-dark-blue;
+    
+    selected-urgent-foreground: @gruvbox-dark-bg0;
+    selected-urgent-background: @gruvbox-dark-red;
+    
+    normal-foreground:          @foreground;
+    normal-background:          @background;
+    
+    active-foreground:          @gruvbox-dark-blue;
+    active-background:          @background;
+    
+    urgent-foreground:          @gruvbox-dark-red;
+    urgent-background:          @background;
+    
+    spacing:                    2;
+    width:                      40%;
+}
+
+window {
+    transparency:               "real";
+    background-color:           @background;
+    border:                     2px;
+    border-color:               @gruvbox-dark-blue-dim;
+    border-radius:              @border-radius;
+    padding:                    0px;
+}
+
+mainbox {
+    padding:                    20px;
+    border:                     0;
+    border-radius:              @border-radius;
+}
+
+inputbar {
+    margin:                     0px 0px 20px 0px;
+    children:                   [prompt, textbox-prompt-colon, entry, case-indicator];
+    background-color:           @gruvbox-dark-bg1;
+    border:                     2px;
+    border-radius:              @border-radius;
+    border-color:               @gruvbox-dark-blue-dim;
+}
+
+prompt {
+    enabled:                    true;
+    padding:                    12px;
+    text-color:                 @gruvbox-dark-blue-dim;
+    background-color:           @gruvbox-dark-bg1;
+    border-radius:              5px 0 0 5px;
+}
+
+textbox-prompt-colon {
+    enabled:                    false;
+    expand:                     false;
+}
+
+entry {
+    padding:                    12px;
+    text-color:                 @gruvbox-dark-fg1;
+    background-color:           @gruvbox-dark-bg1;
+}
+
+listview {
+    border:                     0px;
+    padding:                    5px;
+    columns:                    1;
+    lines:                      8;
+    spacing:                    5px;
+    cycle:                      true;
+    dynamic:                    true;
+    layout:                     vertical;
+    background-color:           transparent;
+}
+
+element {
+    padding:                    10px;
+    border-radius:              @border-radius;
+    background-color:           @gruvbox-dark-bg1;
+}
+
+element selected {
+    background-color:           @gruvbox-dark-blue-dim;
+    text-color:                 @gruvbox-dark-fg0;
+}
+
+element-icon {
+    size:                       24px;
+    margin:                     0 10px 0 0;
+}
+
+element-text {
+    vertical-align:             0.5;
+}
