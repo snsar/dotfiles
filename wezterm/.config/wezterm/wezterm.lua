@@ -7,16 +7,16 @@ local config = wezterm.config_builder()
 -- ============================================================
 
 -- Các scheme khác đã thử: "Catppuccin Mocha", "Tokyo Night", "Ayu Dark (Gogh)"
--- config.color_scheme = "ayu"
+config.color_scheme = "ayu"
 
 -- config.window_background_opacity = 0.9
 
-config.window_padding = {
-  left = 8,
-  right = 8,
-  top = 8,
-  bottom = 4,
-}
+-- config.window_padding = {
+--   left = 8,
+--   right = 8,
+--   top = 8,
+--   bottom = 4,
+-- }
 
 -- Bỏ thanh tiêu đề của WM, chỉ giữ viền để resize
 -- config.window_decorations = "RESIZE"
@@ -29,8 +29,8 @@ config.font = wezterm.font_with_fallback({
   "JetBrainsMono Nerd Font",
   "Noto Color Emoji",
 })
-config.font_size = 9.5
-config.line_height = 1.1
+config.font_size = 9.3
+config.line_height = 1
 
 -- ============================================================
 -- Tab bar
